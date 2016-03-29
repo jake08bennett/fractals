@@ -15,7 +15,7 @@ public class SquareFractal {
 		Square square = new Square(new Point2D.Double(75, 75), 80);
 		 
 		StdDraw.clear(StdDraw.GRAY); 
-		fractal(square, 2, Color.WHITE);
+		fractal(square, 11, Color.WHITE);
 		
 		StdDraw.show();
 	}
@@ -39,11 +39,13 @@ public class SquareFractal {
 		
 		Color nextColor = new Color(red, green, blue);
 		
+
+		square.draw(color);
+		
 		fractal(topLeft,     n-1, nextColor);
 		fractal(bottomRight, n-1, nextColor);
 		fractal(topRight,    n-1, nextColor);
 		fractal(bottomLeft,  n-1, nextColor);
-		square.draw(color);
 		
 	}
 	
