@@ -16,8 +16,8 @@ public class HTree {
 
 	
 	public HTree() {
-		StdDraw.setXscale(75, 150);
-		StdDraw.setYscale(75, 150);
+		StdDraw.setXscale(0, 150);
+		StdDraw.setYscale(0, 150);
 		StdDraw.clear(StdDraw.WHITE);
 		center = new Point2D.Double(75, 75);
 		help = new H(center,50);
