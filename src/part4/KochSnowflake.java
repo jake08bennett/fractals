@@ -5,6 +5,17 @@ import draw.StdDraw;
 
 public class KochSnowflake {
 
-	// TODO: implement
+public static void main(String[] args) {
+		KochSnowflake help = new KochSnowflake();
+		help.draw();
+	}
+	public KochSnowFlake() {
+		StdDraw.clear(StdDraw.BLUE);
+		StdDraw.setXscale(0, 150);
+		StdDraw.setYscale(0, 150);
+	}
+  public draw() {
+	  
+  }
 
 }
